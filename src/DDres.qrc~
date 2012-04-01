@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/img" >
+        <file>button.jpg</file>
+        <file>dd.jpg</file>
+    </qresource>
+    <qresource prefix="/fonts" >
+        <file>typewriter_________royal200bold.ttf</file>
+        <file>typewriter_________royal200normal.ttf</file>
+        <file>typewriter_________royal200trashed.ttf</file>
+    </qresource>
+</RCC>
