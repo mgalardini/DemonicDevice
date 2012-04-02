@@ -53,7 +53,7 @@ void MsgDialog::exec(bool bPlayerExit)
     }
     else
     {
-        QString Msg = "TU\n";
+        QString Msg = "YOU\n";
         Msg.append(m_pParent->m_pRes->getBadSpell());
         m_ui->MsgLabel->setText(Msg);
         m_ui->TargetUser->setText(m_pParent->m_pRes->getMsg("return"));
@@ -72,8 +72,8 @@ void MsgDialog::checkAndClose()
     else if(m_bisTargetNeeded)
     {
         QString Msg = m_ui->TargetUser->text();
-        if(QString::compare("io", Msg, Qt::CaseInsensitive) == 0)
-            Msg = "TU";
+        if(QString::compare("me", Msg, Qt::CaseInsensitive) == 0)
+            Msg = "YOU";
         Msg.append("\n");
         int iGoodBad = m_pParent->getRandomInt(0, 2);
         if(iGoodBad == 0)
